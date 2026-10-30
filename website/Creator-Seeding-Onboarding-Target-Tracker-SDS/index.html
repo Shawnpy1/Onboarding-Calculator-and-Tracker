@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Digital Affiliate Marketing &bull; Onboarding Calculator and Tracker</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Elegant Font Combinations -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=JetBrains+Mono:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="landing-body">
+  <div class="landing-bg-glow"></div>
+
+  <div class="landing-wrapper">
+    <!-- Brand Header -->
+    <header class="landing-header">
+      <div class="landing-brand">
+        <img src="logo.png" alt="Star Digital Affiliate Marketing Logo" class="landing-logo">
+        <div class="landing-brand-text">
+          <div class="company-tagline">
+            <span class="company-name">Star Digital Affiliate Marketing</span>
+          </div>
+          <span class="landing-portal-title">Onboarding Calculator and Tracker</span>
+        </div>
+      </div>
+      <div class="landing-header-actions">
+        <button id="btnOpenHomeScenarios" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+            <polyline points="7 3 7 8 15 8"></polyline>
+          </svg>
+          Saved Scenarios (<span id="homeSavedScenarioCount">0</span>)
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Card -->
+    <main class="landing-hero-card">
+      <!-- Step 0: Campaign Setup (Continuous Flow Origin) -->
+      <div class="campaign-starter-block">
+        <div class="form-label-row">
+          <label for="homeCampaignNameInput" class="form-label starter-label">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            Enter Campaign Name to Begin
+          </label>
+          <span class="starter-subtext">This campaign name will carry forward continuously into the Acceptance
+            Calculator and Target Tracker.</span>
+        </div>
+        <div class="starter-input-row">
+          <input type="text" id="homeCampaignNameInput" class="form-input form-input-lg starter-input"
+            value="Star Digital Q4 Seeding Campaign"
+            placeholder="Enter campaign name (e.g. Star Digital Q4 Seeding Campaign)">
+          <button id="btnStartWorkflow" class="btn btn-primary starter-btn">
+            <span>Start Workflow</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Action Choice Cards (2 Interactive Pathways) -->
+      <div class="landing-choices-grid">
+        <!-- Choice 1: Acceptance Rate Calculator (Recommended Next Step) -->
+        <a href="acceptance-rate.html" id="linkToAcceptance" class="choice-card choice-primary">
+          <div class="choice-pill">Step 1 &bull; Outreach Yield</div>
+          <div class="choice-icon-wrap icon-purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="choice-content">
+            <h2 class="choice-title">Compute Campaign Acceptance Rate</h2>
+            <p class="choice-desc">
+              Input tapped creators vs. onboarded creators with flexible multi-period breakdowns (weekly, monthly, or
+              custom sprint durations) to assess outreach yield and conversion velocity.
+            </p>
+            <div class="choice-features-list">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Tapped vs. Onboarded Ratio</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Custom Weeks, Months & Sprints</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Direct Handoff to Target Tracker</span>
+            </div>
+          </div>
+          <div class="choice-cta">
+            <span>Launch Acceptance Calculator</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Choice 2: Existing Seeding & Onboarding Target Tracker -->
+        <a href="tracker.html" id="linkToTracker" class="choice-card choice-secondary">
+          <div class="choice-pill">Step 2 &bull; Quotas & Trajectory</div>
+          <div class="choice-icon-wrap icon-fuchsia">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="choice-content">
+            <h2 class="choice-title">Creator Seeding & Target Tracker</h2>
+            <p class="choice-desc">
+              Explore the daily onboarding targets, dynamic conversion rate efficiency slider, dual-axis interactive
+              trajectory chart, scenario manager, and multi-format exports.
+            </p>
+            <div class="choice-features-list">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Daily Requirement Engine</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> Interactive Dual-Axis Canvas Chart</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg> CSV, PNG & JSON Export Hub</span>
+            </div>
+          </div>
+          <div class="choice-cta">
+            <span>Open Target Tracker Dashboard</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer landing-footer">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Star Digital Affiliate Marketing Logo" class="footer-logo">
+        <span>Star Digital Affiliate Marketing &bull; Onboarding Calculator and Tracker</span>
+      </div>
+      <span class="footer-meta">Client-side execution &bull; Real-time data model</span>
+    </footer>
+  </div>
+
+  <!-- Central Saved Scenarios Modal on Home Page -->
+  <div class="modal-backdrop" id="homeScenarioModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title">Saved Campaign Scenarios</h3>
+        <button class="modal-close" id="closeHomeScenarioModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="scenario-actions-top">
+          <p class="modal-desc">All saved campaign workflows are stored here. You can load complete continuous campaigns
+            or individual tool snapshots.</p>
+          <div class="scenario-actions-btns">
+            <div class="dropdown" id="homeExportDropdownContainer">
+              <button class="btn btn-secondary btn-sm" id="btnExportScenariosMenu">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Export Scenarios</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu" id="homeExportMenu">
+                <button class="dropdown-item" id="exportScenariosCsvBtn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  Export as CSV (.csv)
+                </button>
+                <button class="dropdown-item" id="exportScenariosPngBtn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  Export as Image (.png)
+                </button>
+                <button class="dropdown-item" id="exportScenariosPdfBtn">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  Export as PDF (.pdf)
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-sm" id="btnHomeSaveNewScenario">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Save Current State
+            </button>
+          </div>
+        </div>
+        <div class="scenario-list" id="homeScenarioListContainer">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Granular Save Modal (Choose what to save) -->
+  <div class="modal-backdrop" id="granularSaveModal">
+    <div class="modal-dialog modal-dialog-sm">
+      <div class="modal-header">
+        <h3 class="modal-title" id="granularModalTitle">Save Campaign Scenario</h3>
+        <button class="modal-close" id="closeGranularSaveBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label for="saveScenarioNameInput" class="form-label">Scenario Name</label>
+          <input type="text" id="saveScenarioNameInput" class="form-input form-input-lg"
+            placeholder="e.g. Q4 Mega Seeding Blitz">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 16px;">
+          <label class="form-label">Select What to Save in this Scenario:</label>
+          <div class="save-scope-options">
+            <label class="save-scope-radio">
+              <input type="radio" name="scenarioSaveScope" value="all" checked>
+              <div class="radio-content">
+                <strong>Continuous Campaign (All)</strong>
+                <span>Saves both the Acceptance Rate Calculator data AND the Target Tracker state together.</span>
+              </div>
+            </label>
+            <label class="save-scope-radio">
+              <input type="radio" name="scenarioSaveScope" value="acceptance_only">
+              <div class="radio-content">
+                <strong>Acceptance Rate Calculator Only</strong>
+                <span>Saves tapped vs. onboarded numbers and multi-duration breakdown without tracker settings.</span>
+              </div>
+            </label>
+            <label class="save-scope-radio">
+              <input type="radio" name="scenarioSaveScope" value="tracker_only">
+              <div class="radio-content">
+                <strong>Target Tracker Only</strong>
+                <span>Saves goal quotas, daily required onboarding, baseline, duration, and conversion slider
+                  settings.</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="cancelGranularSaveBtn">Cancel</button>
+          <button class="btn btn-primary" id="confirmGranularSaveBtn">Save Scenario</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Store & Home Script -->
+  <script src="store.js"></script>
+  <script src="home.js"></script>
+</body>
+
+</html>
